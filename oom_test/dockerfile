@@ -1,0 +1,5 @@
+FROM alpine
+
+RUN apk add --no-cache stress
+
+CMD ["stress", "--vm", "1", "--vm-bytes", "200M"]
